@@ -11,7 +11,7 @@
       * { box-sizing: border-box; }
       body { margin: 0; }
       a { color: inherit; }
-      img { display: block; max-width: 100%; }
+      img { display: block; max-width: 100%; height: auto; }
       .shell { width: min(100% - 48px, 1160px); margin-inline: auto; }
       .masthead { display: flex; align-items: center; justify-content: space-between; min-height: 88px; border-bottom: 1px solid #dbe2d8; }
       .brand { color: #234e3d; font: 700 35px/.9 Georgia, "Times New Roman", serif; letter-spacing: -.075em; text-decoration: none; }
@@ -43,7 +43,7 @@
       .gallery-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 24px; margin-bottom: 26px; }
       .gallery-heading .eyebrow { margin: 0; }
       .gallery-heading span { color: #7d9485; font-size: 12px; letter-spacing: .08em; }
-      .gallery-track { display: grid; grid-auto-columns: minmax(218px, 276px); grid-auto-flow: column; gap: 18px; overflow-x: auto; padding-bottom: 16px; scroll-snap-type: x mandatory; scrollbar-color: #90a99a transparent; }
+      .gallery-track { display: grid; grid-auto-columns: clamp(236px, 24vw, 276px); grid-auto-flow: column; gap: 18px; overflow-x: auto; padding-bottom: 16px; scroll-snap-type: x mandatory; scrollbar-color: #90a99a transparent; }
       .gallery-track figure { margin: 0; scroll-snap-align: start; }
       .gallery-track img { width: 100%; border: 1px solid #dbe2d8; }
       .gallery-track figcaption { margin-top: 13px; color: #315849; font-size: 12px; font-weight: 750; letter-spacing: .1em; text-transform: uppercase; }
